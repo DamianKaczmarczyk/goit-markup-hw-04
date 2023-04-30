@@ -46,12 +46,6 @@ a {
   width: 100%;
   margin: 0 auto;
 }
-.icon {
-  border-radius: 8px;
-  background-color: var(--button-background-color);
-  fill: #2a2a2a;
-  padding: 25px 102.34px;
-}
 /* ---------- HEADER --------------*/
 .header {
   border-bottom: 1px solid #ececec;
@@ -80,7 +74,6 @@ a {
   column-gap: 93px;
   align-items: center;
 }
-.logo,
 .logo-color {
   font-family: var(--secondary-font);
   font-size: 26px;
