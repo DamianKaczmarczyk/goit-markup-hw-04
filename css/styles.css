@@ -50,6 +50,8 @@ a {
 .header {
   border-bottom: 1px solid #ececec;
   background-color: var(--focus-color);
+  justify-content: center;
+  display: flex;
 }
 .menu {
   display: flex;
@@ -99,8 +101,11 @@ a {
 .navigation-list-link,
 .link-contact {
   font-style: var(--main-font);
-  color: var(--secondary-color);
+  color: var(--navigation-color);
   font-weight: 500;
+}
+.mail-list {
+  justify-content: center;
 }
 .mail-list:hover,
 .mail-list:focus {
@@ -376,17 +381,25 @@ a {
 .footer-logo-color {
   color: rgba(255, 255, 255, 1);
 }
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.footer-li {
+  padding-bottom: 9px;
+}
 .footer {
-  display: flex;
   background: var(--hero-item-background-color);
   padding: 60px 0;
+  display: flex;
+}
+.footer-both {
+  display: flex;
 }
 .footer-container {
-  display: inline-block;
   padding-right: 70px;
 }
 .footer-container-right {
-  display: inline-block;
   padding-right: 70px;
   margin-top: 12px;
 }
@@ -396,13 +409,7 @@ a {
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-align: left;
   color: var(--focus-color);
-}
-.adress-list {
-  gap: 9px;
-  display: flex;
-  margin-top: 20px;
 }
 .list-svg-join-us {
   display: flex;
