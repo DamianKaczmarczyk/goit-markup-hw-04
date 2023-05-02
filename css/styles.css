@@ -46,7 +46,6 @@ a {
   width: 100%;
   margin: 0 auto;
 }
-
 /* ---------- HEADER --------------*/
 .header {
   border-bottom: 1px solid #ececec;
@@ -63,6 +62,8 @@ a {
 .contact {
   display: flex;
   column-gap: 50px;
+  fill: var(--navigation-color);
+  justify-content: center;
 }
 .nav-container {
   display: flex;
@@ -95,14 +96,10 @@ a {
 .link-contact:focus {
   color: var(--main-color);
 }
-.navigation-list-link {
-  font-style: var(--main-font);
-  color: var(--secondary-color);
-  font-weight: 500;
-}
+.navigation-list-link,
 .link-contact {
   font-style: var(--main-font);
-  color: var(--navigation-color);
+  color: var(--secondary-color);
   font-weight: 500;
 }
 .mail-list:hover,
@@ -114,17 +111,17 @@ a {
 /* ---------- MAIN --------------*/
 .social-list {
   display: flex;
-  margin-top: 16px;
-  margin-left: 32px;
   gap: 10px;
+  justify-content: center;
 }
 .social-media {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  padding: 12px;
-  display: flex;
   margin-bottom: 30px;
+  margin-top: 16px;
+  display: flex;
+  padding: 12px;
   fill: rgba(175, 177, 184, 1);
 }
 .social-media:hover,
@@ -134,13 +131,14 @@ a {
 }
 .svg-join-us-border {
   border: 1px solid rgba(175, 177, 184, 1);
-  padding: 17.71px, 32px, 14.25px, 32px;
+  padding: 17.71px 32px 14.25px 32px;
 }
 .our-clients {
   display: flex;
   gap: 30px;
   margin-top: 50px;
   fill: rgba(175, 177, 184, 1);
+  justify-content: space-between;
 }
 
 .companies-clients:hover,
@@ -164,7 +162,6 @@ a {
   border-radius: 4px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-  padding: 25px, 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,6 +169,7 @@ a {
 .about-img-list {
   display: flex;
   column-gap: 30px;
+  justify-content: space-between;
 }
 .team-job {
   line-height: 1.187;
@@ -191,9 +189,9 @@ a {
   display: inline-block;
   justify-content: space-between;
   width: 270px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
 }
 .team-img-list {
   display: flex;
@@ -203,14 +201,12 @@ a {
   font-size: 36px;
   line-height: 1.167;
   color: var(--secondary-color);
-  width: 160;
   margin-bottom: 50px;
   text-align: center;
 }
 .hero-text {
   font-family: var(--main-font);
   line-height: 24px;
-  width: 270px;
   color: var(--navigation-color);
   font-size: 14px;
 }
@@ -229,6 +225,7 @@ a {
   color: var(--focus-color);
   margin: 0 auto;
   width: 696px;
+  margin-top: 200px;
 }
 .hero-description-list {
   display: flex;
@@ -260,15 +257,9 @@ a {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/img-bg.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding-top: 200px;
   background-position: center;
-  object-fit: scale-down;
-}
-.business-solutions > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 .business-solutions-container {
   text-align: center;
@@ -280,11 +271,11 @@ a {
   background-color: var(--main-color);
   letter-spacing: 0.06em;
   color: var(--focus-color);
-  width: 200px;
-  height: 50px;
+  padding: 10px 41px 10px 42px;
   margin-top: 30px;
   border-radius: 4px;
-  border: 0;
+  border: none;
+  margin-bottom: 200px;
 }
 .nav-button-card {
   font-family: var(--main-font);
@@ -296,18 +287,17 @@ a {
   background-color: var(--button-background-color);
   border-radius: 4px;
   margin-right: 8px;
-  border: 0;
+  border: none;
 }
 .bg-color {
   background-color: var(--button-background-color);
-  height: 648px;
 }
 .nav-button-card:hover,
 .nav-button-card:focus {
   color: var(--focus-color);
   background-color: var(--main-color);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .buttons-nav {
   display: flex;
@@ -334,15 +324,15 @@ a {
   flex-wrap: wrap;
 }
 .portfolio-list:hover {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 .portfolio-list {
   display: inline-block;
   justify-content: space-between;
   width: 370px;
   border: 1px solid #eeeeee;
-  margin: 0px 25px 30px 0px;
+  margin: 0 25px 30px 0;
 }
 .portfolio-item {
   font-size: 18px;
@@ -356,21 +346,15 @@ a {
   line-height: 1.875;
   color: var(--navigation-color);
   display: block;
-  margin: 0px 24px 20px 24px;
+  margin: 0 24px 20px 24px;
 }
 /* ---------- END-PORTFOLIO --------------*/
 /* ---------- FOOTER --------------*/
 .social-link {
   border-radius: 50%;
   padding: 12px;
-  object-fit: contain;
   color: var(--focus-color);
   background-color: rgba(255, 255, 255, 0.1);
-}
-.footer {
-  display: flex;
-  background: var(--hero-item-background-color);
-  padding: 60px 0;
 }
 .footer-tel-mail {
   font-style: normal;
@@ -392,17 +376,18 @@ a {
 .footer-logo-color {
   color: rgba(255, 255, 255, 1);
 }
+.footer {
+  display: flex;
+  background: var(--hero-item-background-color);
+  padding: 60px 0;
+}
 .footer-container {
-  flex-direction: column;
-  row-gap: 20px;
   display: inline-block;
-  margin-right: 70px;
+  padding-right: 70px;
 }
 .footer-container-right {
-  flex-direction: column;
-  row-gap: 20px;
   display: inline-block;
-  margin-right: 70px;
+  padding-right: 70px;
   margin-top: 12px;
 }
 .join-us {
@@ -415,14 +400,14 @@ a {
   color: var(--focus-color);
 }
 .adress-list {
+  gap: 9px;
   display: flex;
-  flex-direction: column;
-  row-gap: 9px;
+  margin-top: 20px;
 }
 .list-svg-join-us {
   display: flex;
   gap: 10px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 .svg-join-us {
   width: 44x;
@@ -431,8 +416,6 @@ a {
   padding: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
-  justify-content: center;
-  align-items: center;
   fill: var(--focus-color);
 }
 .svg-join-us:hover,
